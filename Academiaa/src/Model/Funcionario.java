@@ -2,12 +2,12 @@
 package Model;
 
 
-public class Funcionarios extends Pessoas {
+public class Funcionario extends Pessoas {
     private String dtAdmissao;
    
     private String senha;
 
-    public Funcionarios(int id, String rg, String cpf, String nome, String sexo, String dtNasc, String celular, String email, String endereco, String cep, String estado, String cidade, String bairro, String cartao) {
+    public Funcionario(int id, String rg, String cpf, String nome, String sexo, String dtNasc, String celular, String email, String endereco, String cep, String estado, String cidade, String bairro, String cartao) {
         super(id, rg, cpf, nome, sexo, dtNasc, celular, email, endereco, cep, estado, cidade, bairro, cartao);
     }
 
