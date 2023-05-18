@@ -24,6 +24,9 @@ public class Venda {
         private String totalVisual;
         private String dtVendaVisual;
 
+        public Vendas() {
+        }
+
         public Vendas(int idVenda, int idCliente, int idFuncionario, int status, float total, String dtVenda) {
             this.idVenda = idVenda;
             this.idCliente = idCliente;

@@ -2,19 +2,21 @@
 package Model;
 
 
-public class Funcionario extends Pessoas {
+public class Funcionario {
     private String dtAdmissao;
-   
     private String senha;
+    
+    public Funcionario() {
+    }
 
-    public Funcionario(int id, String rg, String cpf, String nome, String sexo, String dtNasc, String celular, String email, String endereco, String cep, String estado, String cidade, String bairro, String cartao) {
-        super(id, rg, cpf, nome, sexo, dtNasc, celular, email, endereco, cep, estado, cidade, bairro, cartao);
+    public Funcionario(String dtAdmissao, String senha) {
+        this.dtAdmissao = dtAdmissao;
+        this.senha = senha;
     }
 
     public String getDtAdmissao() {
         return dtAdmissao;
     }
-
 
     public String getSenha() {
         return senha;
@@ -24,10 +26,13 @@ public class Funcionario extends Pessoas {
         this.dtAdmissao = dtAdmissao;
     }
 
-
     public void setSenha(String senha) {
         this.senha = senha;
     }
-    
+
+    @Override
+    public String toString() {
+        return "Funcionario{" + "dtAdmissao=" + dtAdmissao + ", senha=" + senha + '}';
+    }
 
 }

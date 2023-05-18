@@ -9,6 +9,9 @@ public class Plano {
     private float valor;
     private int vencimento;
 
+    public Plano() {
+    }
+        
     public Plano(int id, String nome, String descricao, float valor, int vencimento) {
         this.id = id;
         this.nome = nome;

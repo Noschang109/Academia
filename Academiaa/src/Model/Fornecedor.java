@@ -28,6 +28,8 @@ public class Fornecedor {
     private String celularVisual;
     private String cepVisual;
 
+   public Fornecedor() {
+    }
     public Fornecedor(int id, String nome, String cnpj, String telefone, String celular, String email, String endereco,
             String cep, String estado, String cidade, String bairro) {
         this.id = id;
