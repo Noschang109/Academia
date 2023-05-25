@@ -9,6 +9,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import Model.Cliente;
 
+
 public class ClienteDAO {
 
     public void cadClienteDAO(Cliente cVO) {
@@ -42,10 +43,21 @@ public class ClienteDAO {
                 Cliente c = new Cliente();
                 c.setIdCliente(rs.getInt("IDCliente"));
                 c.setNome(rs.getString("nome"));
-                
+                c.setEndereco(rs.getString("endereco"));
+                c.setDataNascimento(rs.getDate("dataNascimento"));
+                c.setAltura(rs.getFloat("altura"));
+                c.setPeso(rs.getFloat("peso"));
+                c.setImc(rs.getString("imc"));
+                clientes.add(c);
             }
-        } catch (Exception e) {
+        } catch (SQLException ex) {
+            System.out.println("Erro ao cadastrar Cliente!\n"
+                    + ex.getMessage());
         }
-        return null;
-    }
-}
+        return clientes;
+    }//fimListar
+
+
+
+
+}//fimDAO
