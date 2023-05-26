@@ -5,19 +5,13 @@
  */
 package Model;
 
-/**
- *
- * @author 181910174
- */
-public class PlanodeTreino {
+
+public class PlanoTreino {
     private String carga;
     private String repeticoes;
     private String series;
-        
-    public PlanodeTreino() {
-    }
-    
-    public PlanodeTreino(String carga, String repeticoes, String series) {
+
+    public PlanoTreino(String carga, String repeticoes, String series) {
         this.carga = carga;
         this.repeticoes = repeticoes;
         this.series = series;
@@ -27,20 +21,20 @@ public class PlanodeTreino {
         return carga;
     }
 
-    public String getRepeticoes() {
-        return repeticoes;
-    }
-
-    public String getSeries() {
-        return series;
-    }
-
     public void setCarga(String carga) {
         this.carga = carga;
     }
 
+    public String getRepeticoes() {
+        return repeticoes;
+    }
+
     public void setRepeticoes(String repeticoes) {
         this.repeticoes = repeticoes;
+    }
+
+    public String getSeries() {
+        return series;
     }
 
     public void setSeries(String series) {
@@ -49,7 +43,7 @@ public class PlanodeTreino {
 
     @Override
     public String toString() {
-        return "PlanodeTreino{" + "carga=" + carga + ", repeticoes=" + repeticoes + ", series=" + series + '}';
+        return "PlanoTreino{" + "carga=" + carga + ", repeticoes=" + repeticoes + ", series=" + series + '}';
     }
     
     
