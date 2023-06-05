@@ -9,7 +9,7 @@ public class Cliente {
     private String nome;
     private String endereco;
     private Date dataNascimento;
-    private String altura;
+    private float altura;
     private float peso;
     private String imc;
     private String ultimoAcesso;
@@ -18,7 +18,7 @@ public class Cliente {
     public Cliente() {
     }
 
-    public Cliente(int IdCliente, int plano, String nome, String endereco, Date dataNascimento, String altura, float peso, String imc, String ultimoAcesso, String cpf) {
+    public Cliente(int IdCliente, int plano, String nome, String endereco, Date dataNascimento, float altura, float peso, String imc, String ultimoAcesso, String cpf) {
         this.IdCliente = IdCliente;
         this.plano = plano;
         this.nome = nome;
@@ -71,11 +71,11 @@ public class Cliente {
         this.dataNascimento = dataNascimento;
     }
 
-    public String getAltura() {
+    public float getAltura() {
         return altura;
     }
 
-    public void setAltura(String altura) {
+    public void setAltura(float altura) {
         this.altura = altura;
     }
 
@@ -116,7 +116,6 @@ public class Cliente {
         return "Cliente{" + "IdCliente=" + IdCliente + ", plano=" + plano + ", nome=" + nome + ", endereco=" + endereco + ", dataNascimento=" + dataNascimento + ", altura=" + altura + ", peso=" + peso + ", imc=" + imc + ", ultimoAcesso=" + ultimoAcesso + ", cpf=" + cpf + '}';
     }
 
-    
     
     
 }
