@@ -8,7 +8,7 @@ public class Cliente {
     private int plano;
     private String nome;
     private String endereco;
-    private Date dataNascimento;
+    private String dataNascimento;
     private float altura;
     private float peso;
     private String imc;
@@ -18,7 +18,7 @@ public class Cliente {
     public Cliente() {
     }
 
-    public Cliente(int IdCliente, int plano, String nome, String endereco, Date dataNascimento, float altura, float peso, String imc, String ultimoAcesso, String cpf) {
+    public Cliente(int IdCliente, int plano, String nome, String endereco, String dataNascimento, float altura, float peso, String imc, String ultimoAcesso, String cpf) {
         this.IdCliente = IdCliente;
         this.plano = plano;
         this.nome = nome;
@@ -63,11 +63,11 @@ public class Cliente {
         this.endereco = endereco;
     }
 
-    public Date getDataNascimento() {
+    public String getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
+    public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 
@@ -116,6 +116,7 @@ public class Cliente {
         return "Cliente{" + "IdCliente=" + IdCliente + ", plano=" + plano + ", nome=" + nome + ", endereco=" + endereco + ", dataNascimento=" + dataNascimento + ", altura=" + altura + ", peso=" + peso + ", imc=" + imc + ", ultimoAcesso=" + ultimoAcesso + ", cpf=" + cpf + '}';
     }
 
+    
     
     
 }

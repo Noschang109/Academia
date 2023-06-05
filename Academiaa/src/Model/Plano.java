@@ -5,25 +5,18 @@ package Model;
 public class Plano {
     private int id;
     private String nome;
-    private String descricao;
     private float valor;
     private int vencimento;
-    private String carga;
-    private String repeticoes;
-    private String series;
+   
 
     public Plano() {
     }
 
-    public Plano(int id, String nome, String descricao, float valor, int vencimento, String carga, String repeticoes, String series) {
+    public Plano(int id, String nome, float valor, int vencimento) {
         this.id = id;
         this.nome = nome;
-        this.descricao = descricao;
         this.valor = valor;
         this.vencimento = vencimento;
-        this.carga = carga;
-        this.repeticoes = repeticoes;
-        this.series = series;
     }
 
     public int getId() {
@@ -42,14 +35,6 @@ public class Plano {
         this.nome = nome;
     }
 
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
     public float getValor() {
         return valor;
     }
@@ -66,35 +51,10 @@ public class Plano {
         this.vencimento = vencimento;
     }
 
-    public String getCarga() {
-        return carga;
-    }
-
-    public void setCarga(String carga) {
-        this.carga = carga;
-    }
-
-    public String getRepeticoes() {
-        return repeticoes;
-    }
-
-    public void setRepeticoes(String repeticoes) {
-        this.repeticoes = repeticoes;
-    }
-
-    public String getSeries() {
-        return series;
-    }
-
-    public void setSeries(String series) {
-        this.series = series;
-    }
-
     @Override
     public String toString() {
-        return "Plano{" + "id=" + id + ", nome=" + nome + ", descricao=" + descricao + ", valor=" + valor + ", vencimento=" + vencimento + ", carga=" + carga + ", repeticoes=" + repeticoes + ", series=" + series + '}';
+        return "Plano{" + "id=" + id + ", nome=" + nome + ", valor=" + valor + ", vencimento=" + vencimento + '}';
     }
-        
-    
+
     
 }
