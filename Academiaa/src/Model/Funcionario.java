@@ -1,6 +1,7 @@
 package Model;
 
 public class Funcionario {
+    private int IdFuncionario;
     private String rg;
     private String cpf;
     private String nome;
@@ -10,14 +11,15 @@ public class Funcionario {
     private String email;
     private String endereco;
     private String cep;
-    private String cartao;
+    private int cartao;
     private String dtAdmissao;
-    private String senha;
+    private int senha;
     
  public Funcionario() {
     }
 
-    public Funcionario(String rg, String cpf, String nome, String sexo, String dtNasc, String celular, String email, String endereco, String cep, String cartao, String dtAdmissao, String senha) {
+    public Funcionario(int IdFuncionario, String rg, String cpf, String nome, String sexo, String dtNasc, String celular, String email, String endereco, String cep, int cartao, String dtAdmissao, int senha) {
+        this.IdFuncionario = IdFuncionario;
         this.rg = rg;
         this.cpf = cpf;
         this.nome = nome;
@@ -30,107 +32,116 @@ public class Funcionario {
         this.cartao = cartao;
         this.dtAdmissao = dtAdmissao;
         this.senha = senha;
+    }
+
+    public int getIdFuncionario() {
+        return IdFuncionario;
+    }
+
+    public void setIdFuncionario(int IdFuncionario) {
+        this.IdFuncionario = IdFuncionario;
     }
 
     public String getRg() {
         return rg;
     }
 
-    public String getCpf() {
-        return cpf;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public String getSexo() {
-        return sexo;
-    }
-
-    public String getDtNasc() {
-        return dtNasc;
-    }
-
-    public String getCelular() {
-        return celular;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public String getEndereco() {
-        return endereco;
-    }
-
-    public String getCep() {
-        return cep;
-    }
-
-    public String getCartao() {
-        return cartao;
-    }
-
-    public String getDtAdmissao() {
-        return dtAdmissao;
-    }
-
-    public String getSenha() {
-        return senha;
-    }
-
     public void setRg(String rg) {
         this.rg = rg;
+    }
+
+    public String getCpf() {
+        return cpf;
     }
 
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getSexo() {
+        return sexo;
     }
 
     public void setSexo(String sexo) {
         this.sexo = sexo;
     }
 
+    public String getDtNasc() {
+        return dtNasc;
+    }
+
     public void setDtNasc(String dtNasc) {
         this.dtNasc = dtNasc;
+    }
+
+    public String getCelular() {
+        return celular;
     }
 
     public void setCelular(String celular) {
         this.celular = celular;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getEndereco() {
+        return endereco;
     }
 
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
 
+    public String getCep() {
+        return cep;
+    }
+
     public void setCep(String cep) {
         this.cep = cep;
     }
 
-    public void setCartao(String cartao) {
+    public int getCartao() {
+        return cartao;
+    }
+
+    public void setCartao(int cartao) {
         this.cartao = cartao;
+    }
+
+    public String getDtAdmissao() {
+        return dtAdmissao;
     }
 
     public void setDtAdmissao(String dtAdmissao) {
         this.dtAdmissao = dtAdmissao;
     }
 
-    public void setSenha(String senha) {
+    public int getSenha() {
+        return senha;
+    }
+
+    public void setSenha(int senha) {
         this.senha = senha;
     }
 
     @Override
     public String toString() {
-        return "Funcionario{" + "rg=" + rg + ", cpf=" + cpf + ", nome=" + nome + ", sexo=" + sexo + ", dtNasc=" + dtNasc + ", celular=" + celular + ", email=" + email + ", endereco=" + endereco + ", cep=" + cep + ", cartao=" + cartao + ", dtAdmissao=" + dtAdmissao + ", senha=" + senha + '}';
+        return "Funcionario{" + "IdFuncionario=" + IdFuncionario + ", rg=" + rg + ", cpf=" + cpf + ", nome=" + nome + ", sexo=" + sexo + ", dtNasc=" + dtNasc + ", celular=" + celular + ", email=" + email + ", endereco=" + endereco + ", cep=" + cep + ", cartao=" + cartao + ", dtAdmissao=" + dtAdmissao + ", senha=" + senha + '}';
     }
+ 
  
 }

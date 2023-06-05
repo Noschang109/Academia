@@ -33,6 +33,8 @@ public class ListarMensalidade extends javax.swing.JPanel {
         jRadioButton2 = new javax.swing.JRadioButton();
         buscarBotao = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(51, 51, 51));
+
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 52)); // NOI18N
         jLabel1.setText("Listar Mensalidade");
 
