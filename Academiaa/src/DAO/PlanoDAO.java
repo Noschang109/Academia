@@ -36,5 +36,30 @@ public class PlanoDAO {
                     + ex.getMessage());
         }
     }
-
+    public void deletarPlanoDAO(String cpf) {
+        try {
+            Connection con = Conexao.getConexao();
+            String sql = "delete from plano where cpf = ?";
+            PreparedStatement pst = con.prepareStatement(sql);
+            pst.setString(1, cpf);
+            pst.executeUpdate();
+        } catch (SQLException ex) {
+            System.out.println("Erro ao deletar Plano!\n"
+                    + ex.getMessage());
+        }
+    }
+     public void atualizaPlanoByDoc(Plano cVO) {
+        try {
+            Connection con = Conexao.getConexao();
+            String sql = "update plano set nome = ?, valor = ?, vencimento = ?";
+            PreparedStatement pst = con.prepareStatement(sql);
+            pst.setString(1, cVO.getNome());
+            pst.setFloat(2, cVO.getValor());
+            pst.setInt(3, cVO.getVencimento());
+            pst.executeUpdate();
+        } catch (SQLException ex) {
+            System.out.println("Erro ao atualizar Plano!\n"
+                    + ex.getMessage());
+        }
+    }
 }
